@@ -32,16 +32,4 @@ Resources:
       Parameters:
         Stage: !Ref Stage
 
-  Website:
-    Type: 'AWS::Serverless::Application'
-    Properties:
-      Location: '../../static-website/sam/app/template.yaml'
-      Parameters:
-        Stage: !Ref Stage
-    DependsOn: Backend
-
-
-Outputs:
-  WebsiteUrl:
-    Description: The static website URL for the service.
-    Value: !GetAtt Website.Outputs.Url
+  
