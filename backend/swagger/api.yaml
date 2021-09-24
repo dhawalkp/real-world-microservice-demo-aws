@@ -4,7 +4,7 @@ info:
   title:
     A realworld microservices using AWS serverless backend
   description: A simplified implementation of AWS Serverless Application Repository
-  version: 2019-10-13
+  version: "2019-10-13"
 
 # Enable request validator. See doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-validation-sample-api-swagger.html
 x-amazon-apigateway-request-validators:
@@ -266,7 +266,7 @@ paths:
                 $ref: "#/components/schemas/InternalServerErrorException"
 
 components:
-  
+
   schemas:
     BadRequestException:
       type: object
